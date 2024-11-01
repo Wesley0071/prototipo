@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/login/style_login.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Faça seu login</h1>
+        <div class="login">
+            <!-- O onsubmit dispara a função de validação -->
+            <form onsubmit="return validacao_login()" method="post">
+                <div class="email">
+                    <label for="email" class="label-E">E-mail</label>
+                    <input type="email" id="email" class="input-E" name="email" placeholder="exemplo@gmail.com" required>
+                    <img class="caixa-email" src="static/imagens_login/imagem email-25x18.png" alt="caixa de email">
+                </div>
+                <div class="password">
+                    <label for="password" class="label-P">Senha</label>
+                    <input class="input-P" type="password" id="password" name="password" placeholder="Sua Senha" required maxlength="8">
+                    <img class="cadeado-P" src="static/imagens_login/cadeado2-25x25.png" alt="cadeado2-25x25">
+                </div>
+                <div class="lembrar-1">
+                    <input class="lembrar" type="checkbox" name="lembrar" id="lembrar">
+                    <label for="lembrar">Lembrar de mim</label>
+                </div>
+                
+                <div class="recuperar-S-1"><a class="recuperar-S" href="#">Esqueci a Senha</a></div>
+                
+                <div class="conteiner-b">
+                    <button class="button" type="submit"><a href="http://127.0.0.1:5000/entrada/">Enviar</a></button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- mudar isso depois -->
+        <h3>Ainda não tem conta? <a class="criar" href="http://127.0.0.1:5000/cadastro/">Crie uma</a></h3>
+    </div>
+    
+    <script>
+        function validacao_login() {
+            // Captura o valor do campo de email sempre que a função for chamada
+            var email = document.getElementById("email").value;
+
+            // Verifica se o campo de email está vazio
+            if (email === "") {
+                alert("O email é obrigatório");
+                return false;
+            }
+
+            // Verifica se o email contém o símbolo @
+            if (email.indexOf("@") === -1) {
+                alert("O email deve conter um @");
+                return false;
+            }
+
+            // Pega os índices do @ e do . depois do @
+            const iniindex = email.indexOf("@");
+            const fimindex = email.indexOf(".", iniindex);
+
+            // Verifica se há um "." depois do "@"
+            if (fimindex === -1) {
+                alert("Email inválido. Deve conter um '.' após o '@'");
+                return false;
+            }
+
+            // Se passou por todas as validações, o formulário será enviado
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left,#15C0F2, #1CADBD,#6BC8BE,#B1DDD3);
+    font-size: 16px;
+    flex-direction: column;
+}
+
+header {
+    background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+    color:#ffffff ; /* Cor do texto */
+    padding: 10px 1; /* Espaçamento interno (topo/botão e laterais) */
+    display: flex;
+    justify-content: space-between; /* Espaçar logo e menu */
+    align-items: center;
+    position: absolute; /* Fixa o header no topo da página */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Ocupa a largura total */
+    z-index: 1000; /* Garante que fique sobreposto ao conteúdo */
+    box-shadow:0 0 10px;
+    left: 0;
+}
+
+/* Estilos da logo */
+.logo h1 {
+    font-size: 20px;
+    padding: 0px 20%;
+    
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color:#ffffff ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Cor quando o link é hover */
+}
+
+
+.container_rotas {
+    position: relative;
+    width: 830px; /* Largura do mapa */
+    height: 610px; /* Altura do mapa */
+    border: 1px solid #000; /* Borda para visualizar o contorno */
+    margin: 100px auto; /* Centralizar o mapa na página */
+    border-radius: 3% 3%;
+    background-color: rgb(254, 255, 255)
+    ;
+    box-shadow:0  0 10px;
+    flex-direction: column;
+}
+
+
+
+
+/*Botões*/
+
+button{
+    padding: 10px 20px;
+    background-color: #0058ab;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+
+}
+
+button:hover{
+    color: #ff9800;
+}
+
+
+.navigation-form {
+    position: relative;
+    top: 150px;
+    width: 300px; /* Largura do mapa */
+    height: 200px; /* Altura do mapa */
+    border: 1px solid #000; /* Borda para visualizar o contorno */
+    margin: 10px auto; /* Centralizar o mapa na página */
+    border-radius: 3% 3%;
+    background-color: rgb(254, 255, 255);
+    box-shadow:0  0 10px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.navigation-form select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 1;
+    background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+    color: white;  /* Cor do texto */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    left: 0;
+   
+}
+
+/*
+.navigation-form button {
+    padding: 10px 20px;
+    background-color: #511e95;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  
+}
+*/
+
+
+/*
+.map {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+*/
+/*
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+.location-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+*/
+
+/*
+.location-marker.active {
+    background-color: yellow;
+}
+*/

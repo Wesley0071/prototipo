@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa da Faculdade</title>
+    <!-- <link rel="stylesheet" href="rotas-terreo/apartir-entrada/rota-entr-bib.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/rotas-terreo/apartir-entrada/rota-entr-elev-sala-mat.css') }}">
+    
+    
+</head>
+
+<body>
+    <h1>Planta da Faculdade</h1>
+    
+
+    <!-- Container principal do mapa -->
+    <div class="mapa">
+        <!-- Salas -->
+        <div class="ambiente biblioteca"><p>Biblioteca</p></div>
+        <div class="ambiente cantina"><p>Cantina</p></div>
+        <div class="ambiente laboratorio"><p>Laboratório</p></div>
+        <div class="ambiente">
+        <div class="ambiente educart"><p>Educart</p></div>
+        <div class="ambiente secretaria"><p>Secretaría</p></div>
+        <div class="ambiente entrada"><p>Entrada</p></div>
+        <div class="ambiente sala-matricula">Sala de Matrícula</div>
+
+        <div class="escada escada-1"></div>
+        <div class="escada escada-2"></div>
+        <div class="escada escada-3"></div>
+
+        <div class="elevador elevador-1"></div>
+        <div class="elevador elevador-2"></div>
+        
+        
+        </div>
+
+        <!-- Corredores Verticais -->
+        <div class="corredor corredor-vertical-1"></div>
+        <div class="corredor corredor-vertical-2"></div>
+        <div class="corredor corredor-vertical-3"></div>
+
+        <div class="corredor corredor-vertical-cantina-biblioteca"></div>
+
+        <!--Corredores Horizontais -->
+        <div class="corredor corredor-horizontal-canto-educart"></div>
+        <div class="corredor corredor-horizontal-inicio-educart"></div>
+        <div class="corredor corredor-horizontal-canto-secretaria"></div>
+        <div class="corredor corredor-horizontal-meio-secretaria"></div>
+        <div class="corredor corredor-horizontal-inicio-secretaria"></div>
+
+        <div class="corredor corredor-horizontal-inicio-biblioteca"></div>
+        <div class="corredor corredor-horizontal-canto-biblioteca"></div>
+        <div class="corredor corredor-horizontal-meio-biblioteca"></div>
+
+        <div class="corredor corredor-horizontal-meio-cantina"></div>
+        <div class="corredor corredor-horizontal-canto-cantina"></div>
+
+        <!--Interseções/Ligações-->
+        <div class="corredor intersecao-entrada"></div>
+        <div class="corredor intersecao-sala-mat"></div>
+        <div class="corredor intersecao-sala-mat-esc"></div>
+        <div class="corredor intersecao-sala-mat-elev"></div>
+        <div class="corredor intersecao-lab"></div>
+        <div class="corredor intersecao-educart-esc"></div>
+        <div class="corredor intersecao-cantina"></div>
+        <div class="corredor intersecao-biblioteca"></div>
+        <div class="corredor intersecao-biblioteca-elev"></div>
+
+        
+    </div>
+</body>
+</html>

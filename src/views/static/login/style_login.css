@@ -1,0 +1,124 @@
+body {
+    background-image: linear-gradient(to right, #B1DDD3, #6BC8BE, #1CADBD, #15C0F2);
+}
+
+.conteiner {
+    position: relative;
+    background-color: white;
+    width: 380px;
+    height: 500px;
+    text-align: center;
+    border: solid black 1px;
+    margin: 200px auto; /* Centraliza verticalmente e horizontalmente */
+    border-radius: 20px 40px;
+    box-shadow: 5px 5px 5px rgba(55, 104, 99, 0.3);
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 150px;
+    margin-right: 70px;
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.conteiner-b {
+    margin-top: 30px;
+}
+
+.caixa-email,
+.cadeado-P {
+    position: absolute;
+    max-width: 17px; /* Max width para ambos */
+    right: 330px;
+    pointer-events: none;
+}
+
+.caixa-email {
+    top: 21px; /* Para o ícone do email */
+}
+
+.cadeado-P {
+    top: 83px; /* Para o ícone da senha */
+}
+
+.input-E,
+.input-P {
+    width: 260px;
+    height: 40px;
+    margin-right: 15px;
+    padding: 0 0 0 40px; /* Espaçamento interno */
+    border: solid gray 1.5px;
+    border-radius: 5px;
+}
+
+.label-P,
+.label-E {
+    font-size: 15px;
+    position: absolute;
+    margin-left: 5px;
+    padding: 0 5px;
+    background-color: white;
+    pointer-events: none;
+}
+
+.label-P {
+    top: 62px; /* Para a label da senha */
+}
+
+.label-E {
+    bottom: 192px; /* Para a label do email */
+}
+
+.lembrar-1 {
+    margin-top: 5px;
+    margin-right: 195px;
+    color: #747474;
+}
+
+.recuperar-S {
+    position: absolute;
+    margin-left: 35px;
+    bottom: 63px;
+    text-decoration: none;
+    color: #747474;
+}
+
+.button {
+    border: solid 1px;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #15C0F2;
+}
+
+h1 {
+    position: absolute;
+    left: 90px;
+    margin-top: 70px;
+    background: linear-gradient(50deg, #B1DDD3, #1CADBD, #15C0F2, #6BC8BE);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    margin-top: 50px;
+    color: #747474;
+}
+
+.criar {
+    text-decoration: none;
+    color: #1CADBD;
+}

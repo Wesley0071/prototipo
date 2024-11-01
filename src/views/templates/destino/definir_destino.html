@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lint</title>
+    <link rel="stylesheet" href="static/destino css/definir_destino.css">
+</head>
+<body>
+   
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização Interna</title>
+    <link rel="stylesheet" href="static/destino_css/definir_destino.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo"><h1>LINT</h1></div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/">Início</a></li>
+            
+            </ul>
+        </nav>
+    
+    </header>
+    <div class="Container_rotas">
+        
+        <section class="navigation-form">
+            <form id="routeForm">
+                <label for="currentLocation">Onde você está?</label>
+                <select id="currentLocation">
+                    <option value="entrada"  id="entrada">Entrada</option>
+                    <option value="biblioteca" id="biblioteca">Biblioteca</option>
+                    <option value="cantina" id="cantina_e">Cantina</option>
+                    <option value=""></option>
+    
+                </select>
+    
+                <label for="destination">Onde deseja ir?</label>
+                <select id="destination">
+                    <option value="cantina" id="cantina">Cantina</option>
+                    <option value="biblioteca" id="biblioteca">Biblioteca</option>
+                    <option value="secretaria" id="secretaria">Secretaria</option>
+                </select>
+                <a id="meu_link" href="#"></a>
+                <button type="button" onclick="interacao()">Ver Rota</button>
+            </form>
+        </section>
+    </div>
+
+    <!---<section class="map-container">
+        <div class="map">
+            <img src="" alt="Mapa Interno" class="map-image">
+                 Marcadores de localização 
+            <div class="location-marker" style="top: 20%; left: 30%;" id="entrada" title="Entrada"></div>
+            <div class="location-marker" style="top: 40%; left: 50%;" id="biblioteca" title="Biblioteca"></div>
+            <div class="location-marker" style="top: 60%; left: 30%;" id="cantina" title="Cantina"></div>
+            <div class="location-marker" style="top: 80%; left: 70%;" id="secretaria" title="Secretaria"></div>
+        </div>
+    </section>
+    -->
+
+    <footer>
+        <p>&copy; 2024 Localização Interna</p>
+    </footer>
+
+    <script src="js/interacoes_destino/interacoes.js"></script>
+</body>
+</html>
+
+
+

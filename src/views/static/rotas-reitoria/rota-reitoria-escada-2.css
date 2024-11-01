@@ -1,0 +1,220 @@
+.mapa{
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+    justify-content: center;
+    display: grid;
+    margin: 10px auto;
+    margin-top: 15%;
+}
+.escada{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagens/logo_escada.png);
+    background-color: hwb(208 26% 0);
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    
+}
+.elevador{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagens/logo_elevador.png);
+    background-color: #ff9822;
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    border: solid black 1px;
+    margin-left: 72px;
+    margin-top: 300px;
+}
+
+.corredor{
+    position: absolute;
+    border: solid gray 1px;
+    background-color: #c2bebe;
+}
+.ambiente-coord_curso{
+    width: 90px;
+    height: 35px;
+    border: solid black 1px;
+    margin-bottom: 50px;
+    margin-right: 479px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.ambiente-npj{
+    width: 76px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 225px;
+    border: solid gray 1px;
+    background-color: lightblue;
+}
+.ambiente-npj p{
+   margin-top: 1px; 
+}
+
+.ambiente-reitoria{
+    background-color: lightblue;
+    width: 70px;
+    height: 40px;
+    border: solid gray 1px;
+    margin-left: 447px;
+    margin-top: 220px;
+    border-radius: 5px;
+}
+
+p{
+    text-align: center;
+    margin-top: 9px;
+}
+
+.corredor-vertical-1{
+    width: 20px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 430px;
+}
+
+.corredor-vertical-2{
+    background-color: red;
+    width: 20px;
+    height: 130px;
+    margin-left: 292px;
+    margin-top: 311px;
+    
+}
+
+.corredor-vertical-3{
+    width: 20px;
+    height: 70px;
+    margin-left: 350px;
+    margin-top: 221px;
+}
+
+.corredor-vertical-4{
+    width: 20px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+.corredor-vertical-5{
+    width: 20px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 320px;
+}
+
+.corredor-horizontal-1{
+    width: 220px;
+    height: 20px;
+    margin-left: 71px;
+    margin-top: 420px;
+}
+
+.corredor-horizontal-2{
+    background-color: red;
+    width: 57px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 290px;
+}
+
+.corredor-horizontal-3{
+    width: 90px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 204px;
+}
+
+.corredor-horizontal-4{
+    background-color: red;
+    width: 90px;
+    height: 20px;
+    margin-left: 370px;
+    margin-top: 480px;
+    z-index: 1;
+     
+}
+.corredor-horizontal-5{
+    background-color: red;
+    width: 50px;
+    height: 20px;
+    margin-left: 371px;
+    margin-top: 290px;
+    z-index: 1;
+}
+
+
+.corredor-diagonal-1{
+    background-color: red;
+    width: 20px;
+    height: 80px;
+    margin-left: 322px;
+    margin-top: 423px;
+    transform: rotate(-45deg); 
+}
+
+.intersseao-vertical-1{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 420px;
+}
+.intersseao-vertical-2{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 354px;
+    margin-top: 480px; 
+    z-index: 2; 
+}
+.intersseao-vertical-3{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 420px;  
+}
+.intersseao-vertical-4{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 290px; 
+}
+.intersseao-vertical-5{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 300px; 
+}
+.intersseao-vertical-6{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 490px; 
+}
+
+.escada-1{
+    border: solid black 1px;
+    margin-left: 71px;
+    margin-top: 490px;  
+}.escada-2{
+    background-color: orange;
+    border: solid black 1px;
+    margin-left: 380px;
+    margin-top: 311px;
+}
+
+
+
+
+

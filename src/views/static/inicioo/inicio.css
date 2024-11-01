@@ -1,0 +1,161 @@
+
+
+
+header {
+  background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+  color:#ffffff ; /* Cor do texto */
+  padding: 10px 1; /* Espaçamento interno (topo/botão e laterais) */
+  display: flex;
+  justify-content: space-between; /* Espaçar logo e menu */
+  align-items: center;
+  position: absolute; /* Fixa o header no topo da página */
+  top: 0; /* Posiciona no topo */
+  width: 100%; /* Ocupa a largura total */
+  z-index: 1000; /* Garante que fique sobreposto ao conteúdo */
+  box-shadow:0 0 10px;
+  left: 0;
+}
+
+/* Estilos da logo */
+.logo h1 {
+  color: white;
+  font-size: 20px;
+  padding: 0px 20%;
+  left: 0;
+  
+}
+
+/* Estilos da navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color:#ffffff ;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #ff9800; /* Cor quando o link é hover */
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to left, #15C0F2, #1CADBD,#6BC8BE,#B1DDD3);
+    background-size: cover;
+    margin: 0%;
+    background-position: center;
+    height: 100vh;
+}
+
+h1,h3{
+  color: white;
+    text-align: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 1;
+  background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+  color: white;  /* Cor do texto */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  box-sizing: border-box;
+  left: 0;
+ 
+}
+
+.predio1{
+  border-radius: 5px 3px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  box-shadow:0  0 10px;
+  background-image: url(/static/imagens_inicio/predio_ant_est.jpg);
+  background-position: center;
+  margin: 0%;
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: background-image 1 ease-in-out;
+}
+
+.login{
+  width: 30px;
+  height: 50px;
+  background-image: url(static/imagens_inicio/Captura\ de\ tela\ 2024-10-28\ 161229.png);
+  
+}
+
+.predio2{
+  border-radius: 15px 50px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  background-position: center;
+  margin: 0%;
+  background-size: cover;
+  margin-top: 10px;
+  box-shadow:0  0 10px;
+  
+}
+
+
+.container{
+  position: relative;
+  top: 100px;
+    width: 30;
+  display: inline-block;
+}
+button{
+    color: #f0f0f0;
+    border-radius: 20px;
+    background-color: rgb(5, 5, 121);
+    margin-left: 85%;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+
+.text_pred{
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.entrada:hover .predio1{
+  background-image: url(/static/imagens_inicio/predio_principal_zom.png);
+  cursor: pointer;
+  box-shadow:0  0 10px;
+}
+
+.entrada:hover .text_pred{
+  opacity: 1;
+}
+/*
+.garagem:hover .predio2{
+
+  box-shadow:0  0 10px;
+  cursor: pointer;
+  background-image: url(../inicio/imagens/fundo.png);
+}
+
+.garagem:hover .text_pred{
+  opacity: 1;
+}
+  */

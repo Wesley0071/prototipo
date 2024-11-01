@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="static/cadastro/cadastro.css">
+</head>
+
+
+<header>
+    <div class="logo"><h1>LINT</h1></div>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Início</a></li>
+           <!-- <li><a href="../cadastro/cadastro.html">Definir Destino</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+
+        <div class="form">
+            <form action="get">
+
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+    
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">email</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Senha">Senha</label>
+                        <input id="Senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confimesenha">Confirme sua senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Confime sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="pdf">Envie o PDF com sua grade</label>
+                        <input id="pdf" type="file" name="pdf" placeholder="envie o pdf">
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button><a href="http://127.0.0.1:5000/login">Continua</a></button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

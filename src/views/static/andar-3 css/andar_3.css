@@ -1,0 +1,609 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(farthest-side, #15C0F2,#6BC8BE, #1CADBD )fixed;
+    overflow: hidden;
+}
+   
+nav{
+    background-color: #195a96;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 8vh;
+    width: 100%;
+    box-shadow: 3px 3px 3px 3px #1a62a533;
+}
+
+
+.nav-list{
+    display: flex; /* Transforma em display flex para colocar os itens um do lado do outro*/
+    flex-direction: row;/* colocao eixo princimpal horizontal*/
+    justify-content: flex-end;/* coloca o lado de inicio para o lado dereito*/
+    align-items: end;/**/
+    list-style: none;/*tira o estilo de lista*/
+
+}
+
+.nav-list li{
+    margin: 0 5px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2vh 2vw;/*adicona algo dentro do a para podermos movel-lo*/
+    display: inline-block;/*Deixa os itens inline para poder aplicar o pading*/
+    height: 100%;/*tamanho de 100% em relção ao nav*/
+    line-height: 5vh;/*como se fosse um margin-top*/
+}
+
+.lint{
+    position: absolute;
+    color: aliceblue;
+    top: 1.5vh;
+}
+
+
+.mapa{
+    position: relative;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    border: solid black 1px;
+    box-shadow: 5px 5px rgba(11, 185, 185, 0.562);
+    background-color: white;
+    border-radius: 15px 10px 15px 10px;
+    min-width: 200px;
+    min-height: 550px;
+    margin: 100px auto;
+    margin-top: 160px;
+    
+}
+
+.in{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 110px;
+    left: 40px;
+}
+
+.escada{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(imagens/logo_escada.png);
+    background-color: hwb(208 26% 0);
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    
+}
+.elevador{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(imagens/logo_elevador.png);
+    background-color: #ff9822;
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    border: solid black 1px;
+    margin-left: 70px;
+    margin-top: 300px;
+}
+
+.corredor{
+    position: absolute;
+    border: solid gray 1px;
+    background-color: #c2bebe;
+}
+.ambiente-coord_curso{
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    border: solid black 1px;
+    margin-top: 509px;
+    left: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.ambiente-coord_curso p{
+    font-size: small;
+    left: 10px;
+    top: 5px;
+}
+
+.ambiente-npj{
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    margin-left: 367px;
+    margin-top: 220px;
+    border: solid gray 1px;
+    background-color: lightblue;
+}
+
+.ambiente-npj p{
+    left: 25px;
+}
+
+.ambiente-reitoria{
+    position: absolute;
+    background-color: lightblue;
+    width: 70px;
+    height: 40px;
+    border: solid gray 1px;
+    margin-left: 459px;
+    margin-top: 470px;
+    border-radius: 5px;
+}
+
+.ambiente-reitoria p{
+    left: 8px;
+    top: 5px;
+}
+
+
+p{
+    position: absolute;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.corredor-vertical-1{
+    
+    width: 20px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 430px;
+}
+
+.corredor-vertical-2{
+    
+    width: 20px;
+    height: 130px;
+    margin-left: 292px;
+    margin-top: 309px;
+    
+}
+
+.corredor-vertical-3{
+    
+    width: 20px;
+    height: 70px;
+    margin-left: 350px;
+    margin-top: 221px;
+}
+
+.corredor-vertical-4{
+    width: 20px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+.corredor-vertical-5{
+    width: 20px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 320px;
+}
+
+.corredor-horizontal-1{
+    
+    width: 222px;
+    height: 20px;
+    margin-left: 70px;
+    margin-top: 420px;
+}
+
+.corredor-horizontal-2{
+    
+    width: 60px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 290px;
+}
+
+.corredor-horizontal-3{
+    width: 90px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 204px;
+}
+
+.corredor-horizontal-4{
+    width: 90px;
+    height: 20px;
+    margin-left: 370px;
+    margin-top: 480px;
+    z-index: 1;
+     
+}
+.corredor-horizontal-5{
+    width: 50px;
+    height: 20px;
+    margin-left: 369px;
+    margin-top: 290px;
+    z-index: 1;
+}
+
+
+.corredor-diagonal-1{
+    width: 20px;
+    height: 90px;
+    margin-left: 320px;
+    margin-top: 416px;
+    transform: rotate(-45deg); 
+}
+
+.intersseao-vertical-1{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 420px;
+}
+.intersseao-vertical-2{
+    width: 20px;
+    height: 20px;
+    margin-left: 354px;
+    margin-top: 480px; 
+    z-index: 2; 
+}
+.intersseao-vertical-3{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 420px;  
+}
+.intersseao-vertical-4{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 290px; 
+}
+.intersseao-vertical-5{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 300px; 
+}
+.intersseao-vertical-6{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 490px; 
+}
+
+.escada-1{
+    background-color: orange;
+    border: solid black 1px;
+    margin-left: 70px;
+    margin-top: 490px;  
+}.escada-2{
+    border: solid black 1px;
+    margin-left: 380px;
+    margin-top: 310px;
+}
+
+@media (max-width: 650px) {
+      
+
+
+    nav{
+        background-color: #195a96;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 3px 3px 3px 3px #1a62a533;
+    }
+
+
+    .nav-list{
+        display: flex; /* Transforma em display flex para colocar os itens um do lado do outro*/
+        flex-direction: row;/* colocao eixo princimpal horizontal*/
+        justify-content: flex-end;/* coloca o lado de inicio para o lado dereito*/
+        align-items: end;/**/
+        list-style: none;/*tira o estilo de lista*/
+    }
+
+    .nav-list li{
+        margin: 0 5px;
+    }
+
+    .nav-list li a{
+        text-decoration: none;
+        color: aliceblue;
+        padding: 2vh 2vw;/*adicona algo dentro do a para podermos movel-lo*/
+        display: inline-block;/*Deixa os itens inline para poder aplicar o pading*/
+        height: 100%;/*tamanho de 100% em relção ao nav*/
+        line-height: 5vh;/*como se fosse um margin-top*/
+    }
+
+    .lint{
+        position: absolute;
+        color: aliceblue;
+        top: 1.5vh;
+    }
+
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        height: 50vh;
+        border: solid black 1px;
+        position: relative;
+        box-shadow: 5px 5px rgba(11, 185, 185, 0.562);
+        background-color: white;
+        border-radius: 15px 10px 15px 10px;
+        min-width: 20vh;
+        min-height: 55vh;
+        margin: 10vh auto;
+        margin-top: 16vh;
+
+    }
+
+    .in{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 110px;
+        left: 40px;
+    }
+
+    .escada{
+        width: 3vw;
+        height: 2.2vh;
+        position: absolute;
+        background-image: url(imagens/logo_escada.png);
+        background-color: hwb(208 26% 0);
+        background-size: cover;
+        line-height: 1.5;
+        text-align: center;
+        background-position: center;
+
+    }
+    .elevador{
+        width: 2.9vw;
+        height: 2.5vh;
+        position: absolute;
+        background-image: url(imagens/logo_elevador.png);
+        background-color: #ff9822;
+        background-size: cover;
+        line-height: 1.5;
+        text-align: center;
+        background-position: center;
+        border: solid black 1px;
+        margin-left: 69px;
+        margin-top: 300px;
+    }
+
+    .corredor{
+        position: absolute;
+        border: solid gray 1px;
+        background-color: #c2bebe;
+        width: 15vw;
+        height: 4vh;
+    }
+    .ambiente-coord_curso{
+        position: absolute;
+        border: solid black 1px;
+        margin-top: 509px;
+        left: 10px;
+        background-color: lightblue;
+        border-radius: 5px;
+    }
+
+    .ambiente-coord_curso p{
+        font-size: small;
+        left: 10px;
+        top: 5px;
+    }
+
+    .ambiente-npj{
+        position: absolute;
+        margin-left: 367px;
+        margin-top: 220px;
+        border: solid gray 1px;
+        background-color: lightblue;
+    }
+
+    .ambiente-npj p{
+        left: 25px;
+    }
+
+    .ambiente-reitoria{
+        position: absolute;
+        background-color: lightblue;
+        border: solid gray 1px;
+        margin-left: 459px;
+        margin-top: 470px;
+        border-radius: 5px;
+    }
+
+    .ambiente-reitoria p{
+        left: 8px;
+        top: 5px;
+    }
+
+
+    p{
+        position: absolute;
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .corredor-vertical-1{
+
+        width: 3vw;
+        height: 7.3vh;
+        margin-left: 7.8vw;
+        margin-top: 50vh;
+    }
+
+    .corredor-vertical-2{
+
+        width: 3vw;
+        height: 13vh;
+        margin-left: 292px;
+        margin-top: 309px;
+
+    }
+
+    .corredor-vertical-3{
+
+        width: 3vw;
+        height: 9vh;
+        margin-left: 350px;
+        margin-top: 221px;
+    }
+
+    .corredor-vertical-4{
+        width: 2.3vh;
+        height: 7vh;
+        margin-left: 50px;
+        margin-top: 250px;
+    }
+    .corredor-vertical-5{
+        width: 3vw;
+        height: 13vh;
+        margin-left: 50px;
+        margin-top: 320px;
+    }
+
+    .corredor-horizontal-1{
+
+        width: 35vw;
+        height: 2.3vh;
+        margin-left: 69px;
+        margin-top: 420px;
+    }
+
+    .corredor-horizontal-2{
+
+        width: 10vw;
+        height: 2.3vh;
+        margin-left: 292px;
+        margin-top: 290px;
+    }
+
+    .corredor-horizontal-3{
+        width: 14vw;
+        height: 2.3vh;
+        margin-left: 350px;
+        margin-top: 204px;
+    }
+
+    .corredor-horizontal-4{
+        width: 13.8vw;
+        height: 2.3vh;
+        margin-left: 370px;
+        margin-top: 480px;
+        z-index: 1;
+
+    }
+    .corredor-horizontal-5{
+        width: 10vw;
+        height: 2.3vh;
+        margin-left: 369px;
+        margin-top: 290px;
+        z-index: 1;
+    }
+
+
+    .corredor-diagonal-1{
+        width: 3vw;
+        height: 10vh;
+        margin-left: 320px;
+        margin-top: 416px;
+        transform: rotate(-45deg); 
+    }
+
+    .intersseao-vertical-1{
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 292px;
+        margin-top: 420px;
+    }
+    .intersseao-vertical-2{
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 354px;
+        margin-top: 480px; 
+        z-index: 2; 
+    }
+    .intersseao-vertical-3{
+
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 50px;
+        margin-top: 420px;  
+    }
+    .intersseao-vertical-4{
+
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 350px;
+        margin-top: 290px; 
+    }
+    .intersseao-vertical-5{
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 50px;
+        margin-top: 300px; 
+    }
+    .intersseao-vertical-6{
+
+        width: 3vw;
+        height: 2.3vh;
+        margin-left: 50px;
+        margin-top: 490px; 
+    }
+
+    .escada-1{
+        background-color: orange;
+        border: solid black 1px;
+        margin-left: 69px;
+        margin-top: 490px;  
+    }.escada-2{
+        border: solid black 1px;
+        margin-left: 380px;
+        margin-top: 310px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+

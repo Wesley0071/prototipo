@@ -1,0 +1,132 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left,#15C0F2, #1CADBD,#6BC8BE,#B1DDD3) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos do header */
+header {
+    background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+    color:#ffffff ; /* Cor do texto */
+    padding: 10px 1; /* Espaçamento interno (topo/botão e laterais) */
+    display: flex;
+    justify-content: space-between; /* Espaçar logo e menu */
+    align-items: center;
+    position: absolute; /* Fixa o header no topo da página */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Ocupa a largura total */
+    z-index: 1000; /* Garante que fique sobreposto ao conteúdo */
+    box-shadow:0 0 10px;
+}
+
+
+/* Estilos da logo */
+.logo h1 {
+    font-size: 20px;
+    padding: 0px 20%;
+    
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color:#ffffff ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Cor quando o link é hover */
+}
+
+.conteiner{
+    max-width: 70%;
+    margin: 150px auto;
+    background-color:  white;
+    padding: 20px;
+    box-shadow:0 0 10px;
+    border-radius: 3% 3%;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input [type ="file"] {
+    margin-bottom: 10%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0058ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #c5e3ff;
+    color: #002b81;
+    
+
+}
+
+
+#pdfViewer {
+    margin-top: 20px;
+}
+
+iframe {
+    border: 1px solid #ddd;
+}
+
+.custom-file-upload {
+    padding: 10px 20px;
+    background-color: #0058ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+
+  
+}
+
+.custom-file-upload:hover {
+    background-color: #c5e3ff;
+    color: #002b81;
+    
+}
+
+

@@ -1,0 +1,461 @@
+/* Estilos do header */
+header {
+    background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+    color:#ffffff ; /* Cor do texto */
+    padding: 10px 1; /* Espaçamento interno (topo/botão e laterais) */
+    display: flex;
+    justify-content: space-between; /* Espaçar logo e menu */
+    align-items: center;
+    position: absolute; /* Fixa o header no topo da página */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Ocupa a largura total */
+    z-index: 1000; /* Garante que fique sobreposto ao conteúdo */
+    box-shadow:0 0 10px;
+    left: 0;
+}
+
+
+
+/* Estilos da logo */
+.logo h1 {
+    font-size: 20px;
+    padding: 0px 20%;
+    
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color:#ffffff ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Cor quando o link é hover */
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left,#15C0F2, #1CADBD,#6BC8BE,#B1DDD3);
+}
+
+
+/* Definir o layout básico */
+.mapa {
+    position: relative;
+    width: 700px; /* Largura do mapa */
+    height: 620px; /* Altura do mapa */
+    border: 1px solid #000; /* Borda para visualizar o contorno */
+    margin: 100px auto; /* Centralizar o mapa na página */
+    border-radius: 3% 3%;
+    background-color: rgb(254, 255, 255)
+    ;
+    box-shadow:0  0 10px;
+}
+.mapa p{
+    margin: 12px auto;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #0058ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+
+}
+
+button:hover{
+    color: #ff9800;
+}
+
+.botao-1{
+    position: absolute;
+    top: 30px;
+    left: 550px;
+    width: 400px;
+}
+
+.botao-2{
+    position:absolute;
+    top: 100px;
+    left: 550px;
+    width: 400px;
+}
+
+
+/* Estilo básico para as salas */
+.ambiente {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: lightblue; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    border-radius: 5%;
+}
+
+.corredor {
+    position: absolute;
+    background-color: #ddd; /* Cor cinza para corredores */
+    border: 1px solid #999;
+    border-radius: 5%;
+}
+
+.elevador {
+    border-radius: 15%;
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: #ff9822; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    background-image: url(imagens/logo_elevador.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.escada {
+    border-radius: 15%;
+    position: absolute;
+    background-color: hwb(208 26% 0%);
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 1.5;
+    background-image: url(imagens/logo_escada.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.naap {
+    top: 548px;
+    left: 0px;
+    width: 120px;
+    height: 50px;
+}
+
+.coord {
+    top: 475px;
+    left: 490px;
+    width: 120px;
+    height: 50px;
+}
+
+.suporte-ti {
+    top: 50px;
+    left: 0px;
+    width: 120px;
+    height: 50px;
+}
+
+.biblioteca {
+    top: 470px;
+    left: 70px;
+    width:90px;
+    height: 50px;
+}
+
+.lab-info {
+    top: 130px;
+    left: 0px;
+    width: 49px;
+    height: 50px;
+}
+
+.lab-ltd {
+    top: 470px;
+    left: 0px;
+    width: 49px;
+    height: 50px;
+}
+
+/*Escadas e Elevadores*/
+
+.escada-bib {
+    top: 434px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-lab-info {
+    top: 155px;
+    left: 120px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-corredor-1 {
+    top: 250px;
+    left: 305px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-corredor-2 {
+    top: 86px;
+    left: 330px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-1 {
+    top: 315px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-2 {
+    top: 198px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Corredores horizontais*/
+.corredor-horizontal-inf-1 {
+    top: 410px;
+    left:71px;
+    width: 209px;
+    height: 20px;
+}
+
+.corredor-horizontal-inf-2 {
+    top: 490px;
+    left: 390px;
+    width: 100px;
+    height: 20px;
+}
+
+
+.corredor-horizontal-sup-1 {
+    top: 230px;
+    left: 71px;
+    width: 210px;
+    height: 20px;
+}
+
+.corredor-horizontal-sup-2 {
+    top: 230px;
+    left: 300px;
+    width: 40px;
+    height: 20px;
+}
+
+.corredor-horizontal-sup-3 {
+    top: 230px;
+    left: 340px;
+    width: 150px;
+    height: 20px;
+}
+.corredor-horizontal-sup-4 {
+    top: 119px;
+    left: 351px;
+    width: 100px;
+    height: 20px;
+}
+
+.corredor-horizontal-lab-info {
+    top: 160px;
+    left: 70px;
+    width: 50px;
+    height: 20px;
+}
+
+
+
+/*Corredores verticais*/
+.corredor-vertical-naap-1 {
+    top: 520px;
+    left: 50px;
+    width: 20px;
+    height: 29px;
+}
+
+.corredor-vertical-naap-2 {
+    top: 431px;
+    left: 50px;
+    width: 20px;
+    height: 40px;
+    
+}
+
+.corredor-vertical-naap-3 {
+    top: 340px;
+    left: 50px;
+    width: 20px;
+    height: 70px;
+    
+}
+
+.corredor-vertical-naap-4 {
+    top: 250px;
+    left: 50px;
+    width: 20px;
+    height: 70px;
+    
+}
+
+.corredor-vertical-naap-5 {
+    top: 180px;
+    left: 50px;
+    width: 20px;
+    height: 50px;
+    
+}
+
+.corredor-vertical-naap-6 {
+    top: 102px;
+    left: 50px;
+    width: 20px;
+    height: 60px;
+    
+}
+
+
+.corredor-vertical-secundario-1{
+    top: 250px;
+    left: 280px;
+    width: 20px;
+    height: 160px;
+    
+}
+
+.corredor-vertical-secundario-2 {
+    top: 175px;
+    left: 280px;
+    width: 20px;
+    height: 55px;
+    
+}
+
+.corredor-vertical-secundario-3 {
+    top: 63px;
+    left: 430px;
+    width: 20px;
+    height: 55px;
+    
+}
+
+
+/* Corredores Diagonais*/
+.corredor-diagonal-1 {
+    top: 450px;
+    left: 275px;
+    width: 120px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.corredor-diagonal-2 {
+    top: 141px;
+    left: 278px;
+    width: 70px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+
+
+/* Interseções*/
+
+.intersecao-corredor-vertical-naap-1 {
+    top: 470px;
+    left: 50px;
+    width: 20px;
+    height: 50px;
+}
+
+.intersecao-corredor-vertical-naap-2 {
+    top: 410px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-vertical-naap-elev-3 {
+    top: 320px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-vertical-lab-info-4 {
+    top: 230px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-vertical-lab-info-5 {
+    top: 160px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-vertical-naap-6 {
+    top: 410px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-vertical-naap-7 {
+    top: 410px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-horizontal-2 {
+    top: 230px;
+    left: 280px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-diagonal-sup-1 {
+    top: 170px;
+    left: 280px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-diagonal-sup-2 {
+    top: 119px;
+    left: 330px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-diagonal-inf-1 {
+    top: 410px;
+    left: 280px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-corredor-diagonal-inf-2 {
+    top: 490px;
+    left: 370px;
+    width: 20px;
+    height: 20px;
+}

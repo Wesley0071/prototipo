@@ -1,0 +1,315 @@
+/* Definir o layout básico */
+.mapa {
+    position: relative;
+    width: 850px; /* Largura do mapa */
+    height: 620px; /* Altura do mapa */
+    border: 1px solid #000; /* Borda para visualizar o contorno */
+    margin: 20px auto; /* Centralizar o mapa na página */
+}
+
+.mapa p{
+    margin: 12px auto;
+}
+
+/* Estilo básico para as salas */
+.ambiente {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: lightblue; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    border-radius: 5%;
+}
+
+.elevador {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: #ff9822; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    background-image: url(imagens/logo_elevador.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+
+.escada {
+    position: absolute;
+    background-color: hwb(208 26% 0%);
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 1.5;
+    background-image: url(imagens/logo_escada.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.escada-1 {
+    top: 378px;
+    left: 255px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-2 {
+    top: 378px;
+    left: 654px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-3 {
+    top: 198px;
+    left: 250px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-1 {
+    top: 378px;
+    left: 324px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-2 {
+    top: 378px;
+    left: 500px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilos específicos para cada sala */
+.entrada {
+    top: 548px;
+    left: 350px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.biblioteca {
+    top: 395px;
+    left: 690px;
+    width: 120px;
+    height: 50px;
+}
+
+.sala-matricula {
+    top: 450px;
+    left: 255px;
+    width: 100px;
+    height: 50px;
+}
+
+.secretaria {
+    top: 395px;
+    left: 0px;
+    width: 120px;
+    height: 50px;
+}
+
+.educart {
+    top: 215px;
+    left: 88px;
+    width:120px;
+    height: 50px;
+}
+
+.cantina {
+    top: 215px;
+    left: 690px;
+    width: 120px;
+    height: 50px;
+}
+
+.laboratorio {
+    top: 100px;
+    left: 360px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Corredores ou espaços */
+.corredor {
+    position: absolute;
+    background-color: #ddd; /* Cor cinza para corredores */
+    border: 1px solid #999;
+}
+
+.corredor-vertical-1 {
+    background-color: red;
+    top: 431px;
+    left: 400px;
+    width: 20px;
+    height: 117px;
+}
+
+.corredor-vertical-2 {
+    top: 251px;
+    left: 400px;
+    width: 20px;
+    height: 158px;
+}
+
+.corredor-vertical-3 {
+    top: 150px;
+    left: 400px;
+    width: 20px;
+    height: 78px;
+}
+
+.corredor-vertical-cantina-biblioteca {
+    top: 251px;
+    left: 630px;
+    width: 20px;
+    height: 158px;
+    
+}
+
+.corredor-horizontal-canto-secretaria {
+    top: 410px;
+    left:122px;
+    width: 133px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-secretaria {
+    background-color: red;
+    top: 410px;
+    left:287px;
+    width: 37px;
+    height: 20px;
+}
+
+.corredor-horizontal-inicio-secretaria {
+    background-color: red;
+    top: 410px;
+    left:356px;
+    width: 42px;
+    height: 20px;
+}
+
+
+.corredor-horizontal-inicio-biblioteca {
+    top: 410px;
+    left:421px;
+    width: 79px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-biblioteca {
+    top: 410px;
+    left: 531px;
+    width: 99px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-biblioteca {
+    top: 410px;
+    left:651px;
+    width: 38px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-educart {
+    top: 230px;
+    left: 210px;
+    width: 40px;
+    height: 20px;
+}
+.corredor-horizontal-inicio-educart {
+    top: 230px;
+    left: 260px;
+    width: 139px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-cantina {
+
+    top: 230px;
+    left: 421px;
+    width: 208px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-cantina {
+
+    top: 230px;
+    left: 651px;
+    width: 38px;
+    height: 20px;
+}
+
+.intersecao-entrada {
+    background-color: red;
+    top: 410px;
+    left: 400px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-sala-mat {
+    top: 430px;
+    left: 287px;
+    width: 37px;
+    height: 20px;
+}
+
+.intersecao-sala-mat-esc {
+    background-color: red;
+    top: 410px;
+    left: 256px;
+    width: 30px;
+    height: 20px;
+}
+
+.intersecao-sala-mat-elev {
+    background-color: red;
+    top: 410px;
+    left: 325px;
+    width: 30px;
+    height: 20px;
+}
+
+
+.intersecao-lab {
+    top: 230px;
+    left: 400px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-educart-esc {
+    top: 230px;
+    left: 251px;
+    width: 30px;
+    height: 20px;
+}
+
+.intersecao-cantina {
+    top: 230px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-biblioteca {
+    top: 410px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-biblioteca-elev {
+    top: 410px;
+    left: 501px;
+    width: 30px;
+    height: 20px;
+}
+
+
+

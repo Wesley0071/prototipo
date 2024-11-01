@@ -1,0 +1,16 @@
+banco de dados Lint
+tabela alunos
+
+alunos = {
+    "id":Primary_Key,
+    "nome":varchar(150),
+    "email":varchar(100),
+    "contato":int(13),
+    "id_grade": Forengi_Key,
+}
+
+grade = {
+    "id_grade": Primary_Key,
+    "Sala": varchar(10),
+    "Turma": varchar(10),
+}

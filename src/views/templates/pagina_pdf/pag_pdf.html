@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lint</title>
+    <link rel="stylesheet" href="static/pagina_pdf css/pag_pdf.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>LINT</h1></div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/">Início</a></li>
+                <li><a href="http://127.0.0.1:5000/definir_destino">Definir Destino</a></li>
+            
+            </ul>
+        </nav>
+    
+    </header>
+
+    <div class="conteiner">
+        <h1>Envie o PDF da sua grade e obtenha trajetos personalizados</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="pdfFile" class="custom-file-upload">Escolher Arquivo</label>
+            <input type="file" id="pdfFile" accept="envioPdf" style="display:none;">
+            <br>
+            <button type="button" onclick="uploadPdf()">Enviar PDF</button>
+       
+
+        <div id="pdfViewer">
+            <h2>Visualização do PDF</h2>
+            <iframe id="visualizarPdf" style="display:none;" width="100%" height="500px"></iframe>
+        </div>
+
+        <div id="interacao" style="display:none;">
+            <button type="button" onclick="replacePDF()">Substituir PDF</button>
+            <button type="button" onclick="deletePDF()">Excluir PDF</button>
+        </div>
+        </form>
+    
+    
+    </div>
+    
+</body>
+</html>

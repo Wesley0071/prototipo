@@ -1,0 +1,444 @@
+/* Estilos do header */
+header {
+    background-color:rgba(0, 56, 91, 0.666); /* Cor de fundo */
+    color:#ffffff ; /* Cor do texto */
+    padding: 10px 1; /* Espaçamento interno (topo/botão e laterais) */
+    display: flex;
+    justify-content: space-between; /* Espaçar logo e menu */
+    align-items: center;
+    position: absolute; /* Fixa o header no topo da página */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Ocupa a largura total */
+    z-index: 1000; /* Garante que fique sobreposto ao conteúdo */
+    box-shadow:0 0 10px;
+    left: 0;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #0058ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+
+}
+
+button:hover{
+    color: #ff9800;
+}
+
+.botao-1{
+    position: relative;
+    top: 550px;
+    left: 690px;
+    width: 400px;
+}
+
+/* Estilos da logo */
+.logo h1 {
+    font-size: 20px;
+    padding: 0px 20%;
+    
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color:#ffffff ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Cor quando o link é hover */
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left,#15C0F2, #1CADBD,#6BC8BE,#B1DDD3);
+    font-size: 16px;
+    flex-direction: column;
+    
+}
+
+
+/* Definir o layout básico */
+.mapa {
+    position: relative;
+    width: 830px; /* Largura do mapa */
+    height: 610px; /* Altura do mapa */
+    border: 1px solid #000; /* Borda para visualizar o contorno */
+    margin: 100px auto; /* Centralizar o mapa na página */
+    border-radius: 3% 3%;
+    background-color: rgb(254, 255, 255)
+    ;
+    box-shadow:0  0 10px;
+    flex-direction: column;
+
+}
+
+.mapa p{
+    margin: 12px auto;
+}
+
+/* Estilo básico para as salas */
+.ambiente {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: lightblue; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    border-radius: 5%;
+    box-shadow:0  0 1px;
+}
+
+
+.mensagem {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    color: white;
+    background-color:rgba(0, 56, 91, 0.666); /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    border-radius: 10% 5% 10% 5%;
+    box-shadow:0  0 1px;
+
+}
+
+.mensagem p {
+    margin: 20px auto;
+}
+
+.elevador {
+    position: absolute; /* Para poder posicionar as salas manualmente */
+    background-color: #ff9822; /* Cor das salas */
+    border: 1px solid #333; /* Borda para separar as salas */
+    text-align: center;
+    line-height: 1.5; /* Ajuste para centralizar o texto */
+    background-image: url(imagens/logo_elevador.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+
+.escada {
+    position: absolute;
+    background-color: hwb(208 26% 0%);
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 1.5;
+    background-image: url(imagens/logo_escada.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+
+.mensagem-1{
+    top: 50px;
+    left: 620px;
+    width: 150px;
+    height: 90px;
+}
+
+
+.escada-1 {
+    top: 378px;
+    left: 255px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-2 {
+    top: 378px;
+    left: 654px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-3 {
+    top: 198px;
+    left: 250px;
+    width: 30px;
+    height: 30px;
+}
+
+.escada-4{
+    top: 193px;
+    left: 420px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-1 {
+    top: 378px;
+    left: 324px;
+    width: 30px;
+    height: 30px;
+}
+
+.elevador-2 {
+    top: 378px;
+    left: 500px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilos específicos para cada sala */
+.entrada {
+    top: 548px;
+    left: 350px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.biblioteca {
+    background-color: #ff9822;
+    top: 395px;
+    left: 690px;
+    width: 120px;
+    height: 50px;
+}
+
+.sala-matricula {
+    top: 450px;
+    left: 255px;
+    width: 100px;
+    height: 50px;
+}
+
+.secretaria {
+    top: 395px;
+    left: 5px;
+    width: 120px;
+    height: 50px;
+}
+
+.educart {
+    top: 215px;
+    left: 88px;
+    width:120px;
+    height: 50px;
+}
+
+.cantina {
+    top: 215px;
+    left: 690px;
+    width: 120px;
+    height: 50px;
+}
+
+.laboratorio {
+    top: 100px;
+    left: 360px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Corredores ou espaços */
+.corredor {
+    position: absolute;
+    background-color: #ddd; /* Cor cinza para corredores */
+    border: 1px solid #999;
+}
+
+.corredor-vertical-1 {
+    background-color: red;
+    top: 431px;
+    left: 400px;
+    width: 20px;
+    height: 117px;
+}
+
+.corredor-vertical-2 {
+    top: 251px;
+    left: 400px;
+    width: 20px;
+    height: 158px;
+}
+
+.corredor-vertical-3 {
+    top: 150px;
+    left: 400px;
+    width: 20px;
+    height: 42px;
+}
+
+.corredor-vertical-4 {
+    top: 190px;
+    left: 400px;
+    width: 20px;
+    height: 40px;
+}
+
+
+.corredor-vertical-cantina-biblioteca {
+    
+    top: 251px;
+    left: 630px;
+    width: 20px;
+    height: 158px;
+    
+}
+
+.corredor-horizontal-canto-secretaria {
+    top: 410px;
+    left:127px;
+    width: 129px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-secretaria {
+    top: 410px;
+    left:287px;
+    width: 37px;
+    height: 20px;
+}
+
+.corredor-horizontal-inicio-secretaria {
+    top: 410px;
+    left:356px;
+    width: 47px;
+    height: 20px;
+}
+
+
+.corredor-horizontal-inicio-biblioteca {
+    background-color: red;
+    top: 410px;
+    left:421px;
+    width: 79px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-biblioteca {
+    background-color:rgb(255, 0, 0);
+    top: 410px;
+    left: 531px;
+    width: 99px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-biblioteca {
+    background-color: red;
+    top: 410px;
+    left:651px;
+    width: 38px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-educart {
+    top: 230px;
+    left: 210px;
+    width: 40px;
+    height: 20px;
+}
+.corredor-horizontal-inicio-educart {
+    top: 230px;
+    left: 260px;
+    width: 139px;
+    height: 20px;
+}
+
+.corredor-horizontal-meio-cantina {
+
+    top: 230px;
+    left: 421px;
+    width: 208px;
+    height: 20px;
+}
+
+.corredor-horizontal-canto-cantina {
+    top: 230px;
+    left: 651px;
+    width: 38px;
+    height: 20px;
+}
+
+.intersecao-entrada {
+    background-color: red;
+    top: 410px;
+    left: 400px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-sala-mat {
+    top: 430px;
+    left: 287px;
+    width: 37px;
+    height: 20px;
+}
+
+.intersecao-sala-mat-esc {
+    top: 410px;
+    left: 256px;
+    width: 30px;
+    height: 20px;
+}
+
+.intersecao-sala-mat-elev {
+    top: 410px;
+    left: 325px;
+    width: 30px;
+    height: 20px;
+}
+
+
+.intersecao-lab {
+    top: 230px;
+    left: 400px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-educart-esc {
+    top: 230px;
+    left: 251px;
+    width: 30px;
+    height: 20px;
+}
+
+.intersecao-cantina {
+    top: 230px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-biblioteca {
+    background-color: red;
+    top: 410px;
+    left: 630px;
+    width: 20px;
+    height: 20px;
+}
+
+.intersecao-biblioteca-elev {
+    background-color: red;
+    top: 410px;
+    left: 501px;
+    width: 30px;
+    height: 20px;
+}
+
+
+

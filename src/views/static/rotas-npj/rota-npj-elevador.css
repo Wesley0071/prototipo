@@ -1,0 +1,237 @@
+.mapa{
+    width: 600px;
+    height: 600px;
+    min-height: 400px;
+    min-width: 400px;
+    border: solid black 1px;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 15%;
+}
+.escada{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagens/logo_escada.png);
+    background-color: hwb(208 26% 0);
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    
+}
+.elevador{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagens/logo_elevador.png);
+    background-color: #ff9822;
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    border: solid black 1px;
+    margin-left: 72px;
+    margin-top: 300px;
+}
+
+.corredor{
+    position: absolute;
+    border: solid gray 1px;
+    background-color: #c2bebe;
+}
+.ambiente-coord_curso{
+    position: relative;
+    width: 90px;
+    height: 35px;
+    border: solid black 1px;
+    margin-bottom: 53px;
+    margin-right: 479px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.ambiente-coord_curso p{
+    font-size: small;
+    left: 10px;
+    top: 5px;
+}
+
+.ambiente-npj{
+    position: relative;
+    width: 75px;
+    height: 25px;
+    margin-left: 350px;
+    margin-top: 223px;
+    border: solid gray 1px;
+    background-color: lightblue;
+}
+
+.ambiente-npj p{
+    left: 25px;
+}
+
+.ambiente-reitoria{
+    position: relative;
+    background-color: lightblue;
+    width: 70px;
+    height: 40px;
+    border: solid gray 1px;
+    margin-left: 444px;
+    margin-top: 220px;
+    border-radius: 5px;
+}
+
+.ambiente-reitoria p{
+    left: 8px;
+    top: 5px;
+}
+
+
+p{
+    position: absolute;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.corredor-vertical-1{
+    width: 20px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 430px;
+}
+
+.corredor-vertical-2{
+    width: 20px;
+    height: 130px;
+    margin-left: 292px;
+    margin-top: 309px;
+    
+}
+
+.corredor-vertical-3{
+    width: 20px;
+    height: 70px;
+    margin-left: 350px;
+    margin-top: 221px;
+}
+
+.corredor-vertical-4{
+    width: 20px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+.corredor-vertical-5{
+    background-color: red;
+    width: 20px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 320px;
+}
+
+.corredor-horizontal-1{
+    background-color: red;
+    width: 222px;
+    height: 20px;
+    margin-left: 70px;
+    margin-top: 420px;
+}
+
+.corredor-horizontal-2{
+    width: 60px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 290px;
+}
+
+.corredor-horizontal-3{
+    width: 90px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 204px;
+}
+
+.corredor-horizontal-4{
+    background-color: red;
+    width: 90px;
+    height: 20px;
+    margin-left: 370px;
+    margin-top: 480px;
+    z-index: 1;
+     
+}
+.corredor-horizontal-5{
+    width: 50px;
+    height: 20px;
+    margin-left: 369px;
+    margin-top: 290px;
+    z-index: 1;
+}
+
+
+.corredor-diagonal-1{
+    background-color: red;
+    width: 20px;
+    height: 90px;
+    margin-left: 320px;
+    margin-top: 416px;
+    transform: rotate(-45deg); 
+}
+
+.intersseao-vertical-1{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 292px;
+    margin-top: 420px;
+}
+.intersseao-vertical-2{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 354px;
+    margin-top: 480px; 
+    z-index: 2; 
+}
+.intersseao-vertical-3{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 420px;  
+}
+.intersseao-vertical-4{
+    width: 20px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: 290px; 
+}
+.intersseao-vertical-5{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 300px; 
+}
+.intersseao-vertical-6{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 490px; 
+}
+
+.escada-1{
+    border: solid black 1px;
+    margin-left: 71px;
+    margin-top: 490px;  
+}.escada-2{
+    border: solid black 1px;
+    margin-left: 380px;
+    margin-top: 311px;
+}
+
+
+
+
+
