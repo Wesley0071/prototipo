@@ -9,5 +9,5 @@ function interacao() {
     console.log("ID da opção selecionada:", selectedOptionId);
     
     // Exemplo de uso: alterar o href do link
-    document.getElementById("meu_link").href = `#${selectedOptionId}`;
+    document.getElementById("meu_link").href = `${selectedOptionId}`;
 }
